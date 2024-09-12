@@ -15,14 +15,18 @@ To install FreeTicketing as a Windows service:
 1. Open Command Prompt or PowerShell as Administrator.
 2. Navigate to the FreeTicketing folder.
 3. Run the following command to install the service:
+
 ```powershell
 FreeTicketing.exe --install
 ```
+
 4. To start the service:
+
 ```powershell
 FreeTicketing.exe --start
 ```
-To learn more about the CLI options, see [reference](../guide/cli.md).
+
+To learn more about the CLI options, see [reference](../reference/cli.md).
 
 ## Linux
 

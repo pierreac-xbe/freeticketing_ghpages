@@ -25,7 +25,7 @@ After downloading, extract the zip file. You'll find the following directory str
 
 Ensure you have the correct ODBC driver installed and configured for your ticket database.
 
-[Learn more about ODBC setup](../odbc-setup.md)
+[Learn more about ODBC setup](./odbc-setup.md)
 
 ### Setup SQL Query for Fetching Tickets
 
@@ -59,22 +59,22 @@ Update the `local_config.json` file with the necessary configurations:
 }
 ```
 
-4. For a full local config reference, see [here](./local-config-reference.md).
+4. For a full local config reference, see [here](../reference/local-config.md).
 
 ### Configure `config.json`
 
 Update the `config.json` file based on your e-Ticketing requirements.
 
-- For a full config reference, see [here](./config-reference.md).
+- For a full config reference, see [here](../reference/config.md).
 
 ### Setup Jinja Templates
 
 1. Setup Jinja templates to format the tickets as required.
-2. Follow this [guide](./template-reference.md) to set up the templates.
+2. Follow this [guide](../reference/templates.md) to set up the templates.
 
 ## Running the Application
 
-For a full command line reference, see [here](./command-line-reference.md).
+For a full command line reference, see [here](../reference/cli.md).
 
 ### Test the Setup
 
@@ -86,4 +86,4 @@ FreeTicketing.exe --once
 
 ### Run as a Service
 
-To run FreeTicketing as a service, follow this [guide](../running-as-service.md).
+To run FreeTicketing as a service, follow this [guide](./running-as-service.md).

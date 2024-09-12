@@ -25,7 +25,7 @@ After downloading, extract the zip file. You'll find the following directory str
 
 Ensure you have the correct ODBC driver installed and configured for your ticket database.
 
-[Learn more about ODBC setup](../odbc-setup.md)
+[Learn more about ODBC setup](./odbc-setup.md)
 
 ### Configure `local_config.json`
 
@@ -49,11 +49,11 @@ Example `local_config.json`:
 }
 ```
 
-For a full local config reference, see [here](./local-config-reference.md).
+For a full local config reference, see [here](../reference/local-config.md).
 
 ## Running the Application
 
-For a full command line reference, see [here](./command-line-reference.md).
+For a full command line reference, see [here](../reference/cli.md).
 
 ### Populate Configuration
 
@@ -73,4 +73,4 @@ FreeTicketing.exe --once
 
 ### Run as a Service
 
-To run FreeTicketing as a service, follow this [guide](../running-as-service.md).
+To run FreeTicketing as a service, follow this [guide](./running-as-service.md).

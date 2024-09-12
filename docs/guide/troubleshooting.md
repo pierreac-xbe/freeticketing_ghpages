@@ -56,5 +56,4 @@ When running FreeTicketing service on Windows, The logs files are located inside
 ├─ FreeTicketing.exe
 ├─ logs
     └─ service.log
-    └─ service-{timestamp}.log
 ```

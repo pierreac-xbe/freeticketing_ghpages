@@ -77,10 +77,11 @@ function sidebarReference(): DefaultTheme.SidebarItem[] {
       text: "Reference",
       collapsed: false,
       items: [
-        { text: "Site Config", link: "site-config" },
-        { text: "Frontmatter Config", link: "frontmatter-config" },
-        { text: "Runtime API", link: "runtime-api" },
         { text: "CLI", link: "cli" },
+        { text: "local_config.json", link: "local-config" },
+        { text: "config.json", link: "config" },
+        { text: "Fetching Tickets", link: "fetching-tickets" },
+        { text: "Templates", link: "templates" },
       ],
     },
   ]
