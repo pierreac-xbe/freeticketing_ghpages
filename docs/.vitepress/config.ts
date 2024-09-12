@@ -76,6 +76,7 @@ export default {
       next: true,
     },
     footer: {
+      message: "Take control of your e-Ticketing process today!",
       copyright: "Copyright © 2024-present XBE",
     },
     markdown: {
