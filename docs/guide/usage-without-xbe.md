@@ -5,7 +5,7 @@ This guide will help you set up and use FreeTicketing without XBE.
 ## Download and Installation
 
 ::: info
-Contact us for the download link appropriate for your operating system.
+Contact us at [help@x-b-e.com](mailto:help@x-b-e.com) for the download link for your operating system.
 :::
 
 After downloading, extract the zip file. You'll find the following directory structure:

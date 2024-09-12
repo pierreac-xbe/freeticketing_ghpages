@@ -5,7 +5,7 @@ FreeTicketing integrates seamlessly with XBE, allowing you to manage your e-Tick
 ## Download and Installation
 
 ::: info
-Contact us for the download link appropriate for your operating system.
+Contact us at [help@x-b-e.com](mailto:help@x-b-e.com) for the download link for your operating system.
 :::
 
 After downloading, extract the zip file. You'll find the following directory structure:
@@ -30,7 +30,7 @@ Ensure you have the correct ODBC driver installed and configured for your ticket
 ### Configure `local_config.json`
 
 ::: info
-Contact the XBE team to obtain the correct values for `api_config_url`, `api_logging_url`, and `api_key`.
+Contact the XBE team at [help@x-b-e.com](mailto:help@x-b-e.com) to obtain the correct values for `api_config_url`, `api_logging_url`, and `api_key`.
 :::
 
 1. Add the ODBC connection obtained from the previous step to the `database_connection_string` field. It will look something like `DSN=<Your DSN Name>;`.

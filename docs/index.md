@@ -11,7 +11,7 @@ hero:
       link: /guide/usage-with-xbe
     - theme: alt
       text: Why FreeTicketing?
-      link: /guide/overview#how-freeticketing-works
+      link: /guide/overview#why-freeticketing
 
 features:
   - title: Universal e-Ticket Submission

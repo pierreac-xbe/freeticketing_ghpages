@@ -64,6 +64,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
         { text: "Usage with XBE", link: "usage-with-xbe" },
         { text: "Usage without XBE", link: "usage-without-xbe" },
         { text: "Running as Service", link: "running-as-service" },
+        { text: "Troubleshooting", link: "troubleshooting" },
       ],
     },
   ]
