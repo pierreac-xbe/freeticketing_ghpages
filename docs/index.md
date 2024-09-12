@@ -8,10 +8,10 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /guide/
+      link: /guide/usage/with-xbe
     - theme: alt
       text: Why FreeTicketing?
-      link: /guide/
+      link: /guide/overview#how-freeticketing-works
 
 features:
   - title: Universal e-Ticket Submission

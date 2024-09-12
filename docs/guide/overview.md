@@ -2,6 +2,12 @@
 
 FreeTicketing is a software solution that allows you to send e-Tickets selectively and securely. It's designed to give you full control over your e-Ticketing process, running on your own infrastructure to ensure data privacy and security.
 
+<div class="tip custom-block" style="padding-top: 8px">
+
+Just want to try it out? Skip to the [Quickstart](./getting-started) .
+
+</div>
+
 ## Why FreeTicketing?
 
 FreeTicketing addresses several key challenges in e-Ticket management:

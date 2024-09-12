@@ -60,7 +60,8 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
         { text: "Overview", link: "overview" },
-        { text: "Getting Started", link: "getting-started" },
+        { text: "Usage with XBE", link: "usage/with-xbe" },
+        { text: "Usage without XBE", link: "usage/without-xbe" },
       ],
     },
   ]
