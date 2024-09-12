@@ -1,10 +1,11 @@
-import { defineConfig } from "vitepress"
+import { DefaultTheme, defineConfig } from "vitepress"
 
 const title = "Send e-Tickets Selectively and Securely, Every Time"
 const description =
   "FreeTicketing is a secure, and flexible e-Ticketing solution that simplifies submission and distribution of e-Tickets across multiple systems and recipients."
 const logoURL = "/logo.png"
 const ogImageURL = "/og-image.png"
+
 export default defineConfig({
   title,
   description,
@@ -32,11 +33,12 @@ export default defineConfig({
     // Navbar Link
     nav: [
       { text: "Home", link: "/" },
-      { text: "Documentation", link: "/documentation" },
+      { text: "Guide", link: "/guide/overview" },
+      { text: "Reference", link: "/reference/site-config" },
     ],
 
     // Sidebar
-    sidebar: [{}],
+    sidebar: [...sidebarGuide(), ...sidebarReference()],
     footer: {
       message: "Take control of your e-Ticketing process today!",
       copyright: "Copyright © 2024-present XBE",
@@ -44,13 +46,38 @@ export default defineConfig({
     search: {
       provider: "local",
     },
-    // you can disable the previous and next page here
-    docFooter: {
-      prev: false,
-      next: true,
-    },
     // Mobile Config only
     returnToTopLabel: "Go to Top",
     sidebarMenuLabel: "Menu",
   },
 })
+
+function sidebarGuide(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      base: "/guide/",
+      text: "Guide",
+      collapsed: false,
+      items: [
+        { text: "Overview", link: "overview" },
+        { text: "Getting Started", link: "getting-started" },
+      ],
+    },
+  ]
+}
+
+function sidebarReference(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      base: "/reference/",
+      text: "Reference",
+      collapsed: false,
+      items: [
+        { text: "Site Config", link: "site-config" },
+        { text: "Frontmatter Config", link: "frontmatter-config" },
+        { text: "Runtime API", link: "runtime-api" },
+        { text: "CLI", link: "cli" },
+      ],
+    },
+  ]
+}
