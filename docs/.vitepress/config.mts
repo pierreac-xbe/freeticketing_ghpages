@@ -60,6 +60,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
         { text: "Overview", link: "overview" },
+        { text: "ODBC Setup", link: "odbc-setup" },
         { text: "Usage with XBE", link: "usage/with-xbe" },
         { text: "Usage without XBE", link: "usage/without-xbe" },
       ],
