@@ -1,7 +1,9 @@
 # Local Configuration
+
 This configuration contains fields that are specific to the local environment. It is stored in the same directory as the application executable.
 
 ## Usage
+
 ```json
 {
   "database_connection_string": "DSN=FreeTicketing;",
@@ -30,14 +32,6 @@ Determines whether the application runs in local-only mode. When set to `true`, 
 
 Specifies the interval in minutes between each run of the main application logic.
 
-### `config_fetch_interval_minutes`
-
-- Type: `number`
-- Required: `false`
-- Default: `60`
-
-Defines the interval in minutes between fetches of the configuration from the API.
-
 ### `database_connection_string`
 
 - Type: `string`
@@ -52,11 +46,11 @@ The connection string / DSN used to connect to the database. For example: "DSN=F
 
 Specifies the type of pagination used for database queries.
 Available options:
+
 - `ads`: Paginates using `TOP {limit} START AT {offset}` as long as there are results.
 - `mssql`: Paginates using `TOP ({limit}) OFFSET {offset} ROWS FETCH NEXT {limit} ROWS ONLY` as long as there are results.
 - `msaccess` or empty string: No pagination support.
 - Any other string: Paginates using `LIMIT {limit} OFFSET {offset}` as long as there are results.
-
 
 ### `api_config_url`
 
@@ -79,9 +73,16 @@ The URL endpoint for sending logs to the XBE API.
 
 The API key used for authentication when making requests to the XBE API endpoints.
 
+### `config_fetch_interval_minutes`
+
+- Type: `number`
+- Required: `false`
+- Default: `60`
+
+Defines the interval in minutes between fetches of the configuration from the XBE API.
 
 :::info
 
-These 3 fields are specifically used when running the application with XBE.
+These 4 fields are specifically used when running the application with XBE.
 
 :::
