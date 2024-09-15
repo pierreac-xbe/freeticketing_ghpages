@@ -1,6 +1,6 @@
 # Local Configuration
 
-This configuration contains fields that are specific to the local environment. It is stored in the same directory as the application executable.
+The `local_config.json` file contains settings specific to the local environment where FreeTicketing is installed. This configuration file is stored in the same directory as the application executable and plays a crucial role in customizing the software's behavior for your specific setup.
 
 ## Usage
 
