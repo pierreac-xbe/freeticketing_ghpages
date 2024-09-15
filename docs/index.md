@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /guide/usage-with-xbe
+      link: /guide/prerequisites
     - theme: alt
       text: Why FreeTicketing?
       link: /guide/overview#why-freeticketing

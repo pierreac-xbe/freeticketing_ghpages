@@ -7,7 +7,7 @@ The primary way to interact with the FreeTicking agent is through the command li
 ::: code-group
 
 ```powershell [Windows]
-.\FreeTicking.exe --version
+FreeTicking.exe --version
 ```
 
 ```bash [Linux / macOS]
