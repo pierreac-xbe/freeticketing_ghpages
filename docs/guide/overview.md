@@ -23,7 +23,7 @@ FreeTicketing addresses several key challenges in e-Ticket management:
 - Secure operation on your own infrastructure.
 - Selective data control for each recipient.
 - Integration with source ticketing systems via ODBC.
-- Direct submission to DOT through HaulHub API.
+- Direct submission to any destination.
 - XBE integration for configuration and management.
 - Data aggregation from multiple sources.
 - Flexible data formatting using Jinja2 templates.

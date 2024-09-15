@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "FreeTicketing"
-  text: "Send e-Tickets Selectively and Securely, Every Time"
+  text: "Automated, Secure, and Fine-tuned e-Ticket Delivery"
   tagline: "Take control of your e-Ticketing process today."
   actions:
     - theme: brand
@@ -30,8 +30,8 @@ features:
     details: Connect seamlessly with any source ticketing system using ODBC.
     icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9B59B6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
 
-  - title: Directly to DOT
-    details: Securely send e-Tickets directly to the DOT via HaulHub API.
+  - title: Directly to any destination
+    details: Securely send e-Tickets directly to the any destination, DOT or otherwise.
     icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1ABC9C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send-horizontal"><path d="M3.714 3.048a.498.498 0 0 0-.683.627l2.843 7.627a2 2 0 0 1 0 1.396l-2.842 7.627a.498.498 0 0 0 .682.627l18-8.5a.5.5 0 0 0 0-.904z"/><path d="M6 12h16"/></svg>
 
   - title: Seamless XBE Integration
@@ -62,25 +62,3 @@ features:
     details: Smoothly runs on Windows, Linux, and macOS for flexible deployment options.
     icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-laptop"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"/></svg>
 ---
-
-<style>
-:root {
-  --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
-
-  --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
-  --vp-home-hero-image-filter: blur(44px);
-}
-
-@media (min-width: 640px) {
-  :root {
-    --vp-home-hero-image-filter: blur(56px);
-  }
-}
-
-@media (min-width: 960px) {
-  :root {
-    --vp-home-hero-image-filter: blur(68px);
-  }
-}
-</style>

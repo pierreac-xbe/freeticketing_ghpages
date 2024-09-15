@@ -3,7 +3,7 @@ import { DefaultTheme, defineConfig } from "vitepress"
 const title = "Send e-Tickets Selectively and Securely, Every Time"
 const description =
   "FreeTicketing is a secure, and flexible e-Ticketing solution that simplifies submission and distribution of e-Tickets across multiple systems and recipients."
-const logoURL = "/logo.png"
+const logoURL = "/xbe-logo-black.svg"
 const ogImageURL = "/og-image.png"
 
 export default defineConfig({
@@ -27,7 +27,7 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    logo: "/logo.png",
+    logo: logoURL,
     siteTitle: "FreeTicketing",
 
     // Navbar Link

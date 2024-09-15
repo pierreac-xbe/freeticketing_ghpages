@@ -25,8 +25,7 @@ The `config.json` file contains settings specific to the environment where FreeT
             "match_field": "string",
             "match_values": ["string"],
             "match_pattern": "string",
-            "contract_number": "string", // Haulhub specific
-            "dot_code": "string" // Haulhub specific
+            //...others fields can be added based on the requirement
           }
         ]
       }
@@ -86,7 +85,7 @@ An array of exporter configurations, each containing:
 
 - Type: `string`
 
-The name of the exporter. Examples: "haulhub", "xbe".
+The name of the exporter. Examples: "xbe".
 
 ### `api_url`
 
@@ -131,8 +130,6 @@ An array of criteria for filtering tickets to be exported:
 - `match_field` (string): The field to match for identifying the project or job.
 - `match_values` (array of strings): An array of values to match against the `match_field`.
 - `match_pattern` (string): A pattern to match against (can be null).
-- `contract_number` (string): The contract number associated with the ticket - HaulHub specific.
-- `dot_code` (string): The DOT code associated with the ticket - HaulHub specific.
 
 ## Notes
 
