@@ -30,7 +30,7 @@ Ensure you have the correct ODBC driver installed and configured for your ticket
 ### Configure `local_config.json`
 
 ::: info
-Contact the XBE team at [help@x-b-e.com](mailto:help@x-b-e.com) to obtain the correct values for `api_config_url`, `api_logging_url`, and `api_key`.
+Contact the XBE team at [help@x-b-e.com](mailto:help@x-b-e.com) to obtain your `api_config_url`, `api_logging_url`, and `api_key`.
 :::
 
 1. Add the ODBC connection obtained from the previous step to the `database_connection_string` field. It will look something like `DSN=<Your DSN Name>;`.
@@ -43,9 +43,9 @@ Example `local_config.json`:
 {
   "database_connection_string": "DSN=FreeTicketing;",
   "database_pagination_type": "MSSQL",
-  "api_config_url": "",
-  "api_logging_url": "",
-  "api_key": ""
+  "api_config_url": "value-goes-here",
+  "api_logging_url": "value-goes-here",
+  "api_key": "value-goes-here"
 }
 ```
 

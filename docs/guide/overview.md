@@ -1,10 +1,11 @@
 # Overview
 
-FreeTicketing is a software solution that allows you to send e-Tickets selectively and securely. It's designed to give you full control over your e-Ticketing process, running on your own infrastructure to ensure data privacy and security.
+FreeTicketing is a software solution that allows you to send e-Tickets selectively and securely.
+It's designed to give you full control over your e-Ticketing process, running on your own infrastructure to ensure data privacy and security.
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-Just want to try it out? Skip to the [Quickstart](./prerequisites.md) .
+Just want to try it out? Skip to the [Quickstart](./prerequisites.md).
 
 </div>
 
@@ -13,7 +14,7 @@ Just want to try it out? Skip to the [Quickstart](./prerequisites.md) .
 FreeTicketing addresses several key challenges in e-Ticket management:
 
 1. **Data control**: You decide exactly what data to send and to whom.
-2. **Security**: The system runs on your infrastructure, ensuring your data remains under your control.
+2. **Security**: The system runs on your infrastructure; your data remains under your control.
 3. **Integration**: It works with various ticketing systems and can send data directly to the Department of Transportation.
 4. **Efficiency**: FreeTicketing operates automatically in the background, reducing manual work.
 
@@ -26,7 +27,7 @@ FreeTicketing addresses several key challenges in e-Ticket management:
 - Direct submission to any destination.
 - XBE integration for configuration and management.
 - Data aggregation from multiple sources.
-- Flexible data formatting using Jinja2 templates.
+- Flexible data formatting using templates.
 - Comprehensive logging for easy troubleshooting.
 - Support for Windows, Linux, and macOS.
 

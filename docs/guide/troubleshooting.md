@@ -1,7 +1,7 @@
 # Troubleshooting
 
 ## Common Issues
-### MSSQL Permission Error
+### SQL Server Permission Error
 
 If you encounter the following error:
 "The server principal 'NT AUTHORITY\SYSTEM' is not able to access the database 'Your Ticket DB Name' under the current security context. (916) (SQLExecDirectW)"

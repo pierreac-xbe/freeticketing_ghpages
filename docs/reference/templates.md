@@ -11,7 +11,7 @@ Templates are used to format tickets according to specific requirements. We use 
 ## File Structure
 
 ```
-|-FreeTicking.exe
+|-FreeTicketing.exe
 |-- templates/
     |-- xbe.j2
     |-- recipient2.j2

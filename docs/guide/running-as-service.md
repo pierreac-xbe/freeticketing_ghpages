@@ -26,7 +26,7 @@ FreeTicketing.exe --install
 FreeTicketing.exe --start
 ```
 
-To learn more about the CLI options, see [reference](../reference/cli.md).
+To learn more about the command line options, see [reference](../reference/cli.md).
 
 ## Linux
 
