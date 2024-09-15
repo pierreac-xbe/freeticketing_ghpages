@@ -102,7 +102,7 @@ Key-value pairs of headers to be sent with the export request. Example:
 
   ```json
   {
-    "Authorization": "Bearer test"
+    "Authorization": "Bearer <token>"
   }
   ```
 
