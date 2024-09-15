@@ -4,7 +4,7 @@
 ### MSSQL Permission Error
 
 If you encounter the following error:
-"The server principal 'NT AUTHORITY\SYSTEM' is not able to access the database 'Your Ticket DB Name' under the current security context. (916) (SQLExecDirectW)"
+"The server principal `'NT AUTHORITY\SYSTEM' is not able to access the database 'Your Ticket DB Name' under the current security context. (916) (SQLExecDirectW)"`
 
 This typically occurs when running an agent with NSSM on a Windows machine. To resolve:
 
