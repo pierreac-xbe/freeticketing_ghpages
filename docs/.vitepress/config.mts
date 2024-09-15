@@ -15,6 +15,10 @@ export default defineConfig({
   // If this is disabled, when building it it will give deadlink errors if your markdown has the wrong links
   ignoreDeadLinks: true,
 
+  sitemap: {
+    hostname: "https://freeticketing.org",
+  },
+
   head: [
     ["link", { rel: "icon", href: logoURL }],
     ["meta", { name: "twitter:card", content: "summary_large_image" }],
