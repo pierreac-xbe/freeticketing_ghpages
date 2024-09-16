@@ -6,6 +6,8 @@ This guide covers ODBC setup for Windows, Linux, and macOS, with a focus on Micr
 Microsoft provides an excellent [guide](https://learn.microsoft.com/en-us/sql/connect/odbc/microsoft-odbc-driver-for-sql-server?view=sql-server-ver16) on ODBC.
 :::
 
+For all platforms, ensure you have the necessary permissions and network access to connect to your database server.
+
 ## Windows
 
 ### ODBC Driver Installation
@@ -16,6 +18,7 @@ Microsoft provides an excellent [guide](https://learn.microsoft.com/en-us/sql/co
    - For Access: [Microsoft Access Database Engine](https://www.microsoft.com/en-us/download/details.aspx?id=54920)
    - For MySQL: [MySQL ODBC Driver](https://dev.mysql.com/downloads/connector/odbc/)
    - For PostgreSQL: [PostgreSQL ODBC Driver](https://odbc.postgresql.org/)
+   - For ADS: Advantage Database Server ODBC Driver
 
 2. Run the installer and follow the prompts to complete the installation.
 
@@ -26,19 +29,24 @@ Microsoft provides an excellent [guide](https://learn.microsoft.com/en-us/sql/co
    - For 64-bit: Search for "ODBC Data Sources (64-bit)" in the Start menu
    - For 32-bit: Search for "ODBC Data Sources (32-bit)" in the Start menu
 
-2. In the ODBC Data Source Administrator, click the "Add" button under "User DSN" or "System DSN".
+2. In the ODBC Data Source Administrator, click the "Add" button under "System DSN".
 
-3. Select the appropriate driver (SQL Server or Microsoft Access Driver) and click "Finish".
+3. Select the appropriate driver (e.g. SQL Server) and click "Finish".
 
 4. Configure the data source:
 
-   - Name: Enter "FreeTicketing"
-   - Description: Optional, enter a description for the data source
-   - Server: Enter the server name or IP address (for SQL Server)
-   - Database: Select or enter the database name
-   - Authentication: Choose the appropriate authentication method
-
-5. Click "Test Connection" to verify the setup, then click "OK" to save.
+   - Name: Enter "FreeTicketing".
+   - Description: Optional, enter a description for the data source.
+   - For SQL Server
+       - Server: Enter the server name or IP address.
+       - Database: Select or enter the database name.
+       - Authentication: Choose the appropriate authentication method.
+       - Click "Test Connection" to verify the setup, then click "OK" to save.
+   - For ADS
+       - Check the 'Data Dictionary' box
+           - Browse to and select the 'WM2000DATA.ADD' file.
+       - Available Server Types: Make sure 'Remote Server' is checked.
+       - Click "OK" to save
 
 ## Linux
 
@@ -90,5 +98,3 @@ macOS ODBC setup is similar to Linux:
    ```
 
 5. Test the connection using `iodbctest "DSN=FreeTicketing"`.
-
-For all platforms, ensure you have the necessary permissions and network access to connect to your database server.

@@ -19,16 +19,14 @@ The `config.json` file contains settings specific to the environment where FreeT
         "key": "value"
       },
       "ticket_identifier_field": "string",
-      "additional_configurations": {
-        "ticket_export_criteria": [
-          {
-            "match_field": "string",
-            "match_values": ["string"],
-            "match_pattern": "string",
-            //...others fields can be added based on the requirement
-          }
-        ]
-      }
+      "ticket_export_criteria": [
+        {
+          "match_field": "string",
+          "match_values": ["string"],
+          "match_pattern": "string",
+          //...others fields can be added based on the requirement
+        }
+      ]
     }
   ]
 }

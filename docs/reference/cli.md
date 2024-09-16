@@ -1,17 +1,17 @@
 # Command Line Interface
 
-The primary way to interact with the FreeTicking agent is through the command line interface (CLI).
+The primary way to interact with the FreeTicketing agent is through the command line interface (CLI).
 
 ## Usage
 
 ::: code-group
 
 ```powershell [Windows]
-FreeTicking.exe --version
+FreeTicketing.exe --version
 ```
 
 ```bash [Linux / macOS]
-./FreeTicking --version
+./FreeTicketing --version
 ```
 
 :::

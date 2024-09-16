@@ -8,8 +8,8 @@ The `local_config.json` file contains settings specific to the local environment
 {
   "local_only": false,
   "database_connection_string": "DSN=FreeTicketing;",
-  "api_config_url": "https://api.xbe.com/config",
-  "api_logging_url": "https://api.xbe.com/logs",
+  "api_config_url": "https://example.com/config",
+  "api_logging_url": "https://example.com/logs",
   "api_key": "1234567890"
 }
 ```
