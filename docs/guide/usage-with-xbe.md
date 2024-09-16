@@ -14,7 +14,7 @@ After downloading, extract the zip file. You'll find the following directory str
 .
 ├─ FreeTicketing.exe
 ├─ config.json
-├─ local_config.json
+├─ config.local.json
 ├─ nssm.exe // For Windows only
 └─ .env
 ```
@@ -27,7 +27,7 @@ Ensure you have the correct ODBC driver installed and configured for your ticket
 
 [Learn more about ODBC setup](./odbc-setup.md)
 
-### Configure `local_config.json`
+### Configure `config.local.json`
 
 ::: info
 Contact the XBE team at [help@x-b-e.com](mailto:help@x-b-e.com) to obtain your `api_config_url`, `api_logging_url`, and `api_key`.
@@ -37,7 +37,7 @@ Contact the XBE team at [help@x-b-e.com](mailto:help@x-b-e.com) to obtain your `
 2. Update the `database_pagination_type` to the appropriate value.
 3. Fill in the `api_config_url`, `api_logging_url`, and `api_key` fields with the values provided by the XBE team.
 
-Example `local_config.json`:
+Example `config.local.json`:
 
 ```json
 {

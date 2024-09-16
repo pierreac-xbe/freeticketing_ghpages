@@ -1,6 +1,6 @@
 # Local Configuration
 
-The `local_config.json` file contains settings specific to the local environment where FreeTicketing is installed. This configuration file is stored in the same directory as the application executable and plays a crucial role in customizing the software's behavior for your specific setup.
+The `config.local.json` file contains settings specific to the local environment where FreeTicketing is installed. This configuration file is stored in the same directory as the application executable and plays a crucial role in customizing the software's behavior for your specific setup.
 
 ## Usage
 
@@ -23,7 +23,6 @@ The `local_config.json` file contains settings specific to the local environment
 - Default: `false`
 
 Determines whether the application runs in local-only mode. When set to `true`, XBE API-related configurations `api_config_url`, `api_logging_url`, and `api_key` are not required.
-
 
 ### `database_connection_string`
 
@@ -52,7 +51,6 @@ The URL endpoint for sending logs to the XBE API.
 - Required: `false` (only when `local_only` is `true`)
 
 The API key used for authentication when making requests to the XBE API endpoints.
-
 
 :::info
 

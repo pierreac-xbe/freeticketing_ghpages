@@ -10,14 +10,14 @@ Contact us at [help@x-b-e.com](mailto:help@x-b-e.com) for the download link for 
 
 After downloading, extract the zip file. You'll find the following directory structure:
 
-  ```
-  .
-  ├─ FreeTicketing.exe
-  ├─ config.json
-  ├─ local_config.json
-  ├─ nssm.exe // For Windows only
-  └─ .env
-  ```
+```
+.
+├─ FreeTicketing.exe
+├─ config.json
+├─ config.local.json
+├─ nssm.exe // For Windows only
+└─ .env
+```
 
 ## Setup
 
@@ -43,9 +43,9 @@ Ensure you have the correct ODBC driver installed and configured for your ticket
      [TICKET_DATE] ASC, [TICKET_ID] ASC, [PLANT] ASC
    ```
 
-### Configure `local_config.json`
+### Configure `config.local.json`
 
-Update the `local_config.json` file with the necessary configurations:
+Update the `config.local.json` file with the necessary configurations:
 
 1. Add the ODBC connection obtained from the previous step to the `database_connection_string` field. It will look something like `DSN=<Your DSN Name>;`.
 2. Update the `database_pagination_type` to the appropriate value.

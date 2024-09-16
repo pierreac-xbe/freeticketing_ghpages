@@ -83,7 +83,7 @@ function sidebarReference(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
         { text: "CLI", link: "cli" },
-        { text: "local_config.json", link: "local-config" },
+        { text: "config.local.json", link: "local-config" },
         { text: "config.json", link: "config" },
         { text: "Templates", link: "templates" },
       ],

@@ -20,10 +20,11 @@ Templates are used to format tickets according to specific requirements. We use 
 ## Available Variables
 
 The following variables are available to use in your templates:
+
 - `ticket`: The ticket object containing all ticket information.
 - `exporter_config`: Configuration specific to the exporter the ticket is being sent to (from `config.json`).
 - `remote_config`: Full remote configuration settings (from `config.json`).
-- `local_config`: Full local configuration settings (from `local_config.json`).
+- `local_config`: Full local configuration settings (from `config.local.json`).
 
 ## Example Template
 
