@@ -65,9 +65,8 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       items: [
         { text: "Overview", link: "overview" },
         { text: "Prerequisites", link: "prerequisites" },
-        { text: "ODBC Setup", link: "odbc-setup" },
-        { text: "Usage with XBE", link: "usage-with-xbe" },
-        { text: "Usage without XBE", link: "usage-without-xbe" },
+        { text: "Setup", link: "setup" },
+        { text: "ODBC Setup", link: "setup-odbc" },
         { text: "Running as Service", link: "running-as-service" },
         { text: "Troubleshooting", link: "troubleshooting" },
       ],
