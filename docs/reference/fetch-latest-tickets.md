@@ -36,22 +36,35 @@ Ensure that your queries are optimized for performance, especially when dealing 
 :::
 
 ## Example query
+
+Example SQL query to fetch latest tickets.
+Specifically, this example query fetches tickets loaded or modified
+in the last 24 hours, ordered by loaded time in ascending order.
+
 ```sql
--- Example SQL query to fetch latest tickets
-SELECT
-    ticket_id,
-    ticket_number,
-    customer_name,
-    ticket_type,
-    ticket_status,
-    ticket_at,
-    total_weight
+SELECT -- keep select on its own line; This helps with pagination
+    ticket_id
+    ,ticket_number
+    ,ticket_at -- ideally is in UTC, iso8601 format
+    ,unit_of_measure
+    ,quantity
+    ,is_voided
+    ,job_number
+    ,truck_id
+    ,truck_name
+    ,location_id
+    ,location_name
+    ,customer_id
+    ,customer_name
 FROM
     TicketDatabase
 WHERE
     ticket_id IS NOT NULL
-    AND ticket_at >= DATEADD(hour, -24, GETDATE())
+    AND (
+      ticket_at >= DATEADD(hour, -24, GETDATE())
+      OR
+      modified_at >= DATEADD(hour, -24, GETDATE())
+    )
 ORDER BY
-    ticket_at DESC
+    ticket_at ASC
 ```
-This example query fetches tickets created in the last 24 hours, ordered by creation time in descending order.
