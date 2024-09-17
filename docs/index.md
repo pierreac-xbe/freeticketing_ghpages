@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "FreeTicketing"
-  text: "Automated, Secure, and Fine-tuned e-Ticket Delivery"
+  text: "Automated, Secure, and Fine-tuned <br/>e-Ticket Delivery"
   tagline: "Take control of your e-Ticketing process today."
   actions:
     - theme: brand
