@@ -8,8 +8,9 @@ This guide is only applicable when using FreeTicketing without XBE. If you're us
 
 ## File Structure
 
-1. Create a `latest_tickets` folder in your project's root directory.
-2. Inside this folder, create `.sql` files. We recommend using an alphanumeric naming convention.
+1. Create a `latest_tickets` folder in the same directory as the FreeTicketing executable.
+2. Inside this folder, create one or more `.sql` files containing your queries to fetch the latest tickets.
+3. We recommend using an alphanumeric naming convention for these SQL files (e.g., `01_fetch_recent_tickets.sql`, `02_fetch_open_tickets.sql`).
 
 ```
 |-FreeTicketing.exe

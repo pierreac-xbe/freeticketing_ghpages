@@ -9,12 +9,12 @@ Full JSON schema available [here](/freeticketing_configuration.json).
 
 ```json
 {
-  "importer_data_source_type": "libra",
-  "ticket_identifier_field": "TicketID",
+  "importer_data_source_type": "your_data_source_type",
+  "ticket_identifier_field": "your_ticket_identifier_field",
   "latest_tickets_queries": [
     {
       "file_name": "latest_tickets_query.sql",
-      "sql": "SELECT * FROM tickets WHERE status = 'open' ORDER BY created_at DESC"
+      "sql": "your_sql_query"
     }
   ],
   "run_interval_minutes": 3,
@@ -26,7 +26,7 @@ Full JSON schema available [here](/freeticketing_configuration.json).
       "headers": {
         "Authorization": "Bearer YOUR_API_KEY"
       },
-      "ticket_identifier_field": "TicketID",
+      "ticket_identifier_field": "your_ticket_identifier_field",
       "supplier_name": "Supplier Name",
       "template": "{{ ticket_data | tojson }}",
       "batch_size": 10,
