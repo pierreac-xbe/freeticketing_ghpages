@@ -28,7 +28,7 @@ Full JSON schema available [here](/freeticketing_configuration.json).
         "Authorization": "Bearer YOUR_API_KEY"
       },
       "ticket_identifier_field": "your_ticket_identifier_field",
-      "template": "{{ ticket | tojson }}",
+      "template": "{ 'tickets': [ { 'ticket_number': {{ ticket.ticketNumber }} } ] }",
       "batch_size": 10,
       "ticket_export_criteria": [
         {
