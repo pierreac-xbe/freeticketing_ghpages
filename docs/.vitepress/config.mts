@@ -1,6 +1,6 @@
 import { DefaultTheme, defineConfig } from "vitepress"
 
-const title = "Send e-Tickets Selectively and Securely, Every Time"
+const title = "Automated, Secure, and Fine-tuned e-Ticket Delivery"
 const description =
   "FreeTicketing is a secure, and flexible e-Ticketing solution that simplifies submission and distribution of e-Tickets across multiple systems and recipients."
 const logoURL = "/xbe-logo-black.svg"
