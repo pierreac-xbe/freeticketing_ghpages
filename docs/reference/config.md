@@ -211,7 +211,7 @@ The `config.json` file is stored in the same directory as the application execut
   "latest_tickets_queries": [
     {
       "file_name": "latest_tickets_query.sql",
-      "sql": "SELECT * FROM tickets WHERE status = 'open' ORDER BY created_at DESC LIMIT 100"
+      "sql": "SELECT * FROM tickets WHERE status = 'open' ORDER BY created_at DESC"
     }
   ],
   "run_interval_minutes": 3,
