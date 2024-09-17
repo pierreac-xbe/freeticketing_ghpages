@@ -46,7 +46,6 @@ Fill in the `api_config_url`, `api_logging_url`, and `api_key` fields with the v
 ```json
 {
   "database_connection_string": "DSN=FreeTicketing;",
-  "database_pagination_type": "MSSQL",
   "api_config_url": "value-goes-here",
   "api_logging_url": "value-goes-here",
   "api_key": "value-goes-here"
@@ -58,7 +57,6 @@ Usage without XBE: Example `config.local.json`:
 ```json
 {
   "database_connection_string": "DSN=FreeTicketing;",
-  "database_pagination_type": "MSSQL",
   "local_only": true
 }
 ```
@@ -82,6 +80,11 @@ FreeTicketing.exe --update-config
 ```
 
 ### Usage without XBE
+
+#### Setup queries to fetch latest tickets
+
+1. Setup sql query to fetch latest tickets.
+2. Follow this [guide](../reference/fetch-latest-tickets.md) to set up the sql query to fetch latest tickets.
 
 #### Setup Jinja Templates
 

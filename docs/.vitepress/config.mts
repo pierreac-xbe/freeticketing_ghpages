@@ -84,6 +84,7 @@ function sidebarReference(): DefaultTheme.SidebarItem[] {
         { text: "CLI", link: "cli" },
         { text: "config.local.json", link: "local-config" },
         { text: "config.json", link: "config" },
+        { text: "Fetch Latest Tickets", link: "fetch-latest-tickets" },
         { text: "Templates", link: "templates" },
       ],
     },
