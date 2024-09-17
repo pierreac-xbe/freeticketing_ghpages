@@ -3,6 +3,7 @@
 The `config.json` file is stored in the same directory as the application executable and contains all configuration related to sending tickets to the desired destination.
 
 ## Schema
+
 Full JSON schema available [here](/freeticketing_configuration.json).
 
 ## Example configuration
@@ -27,7 +28,6 @@ Full JSON schema available [here](/freeticketing_configuration.json).
         "Authorization": "Bearer YOUR_API_KEY"
       },
       "ticket_identifier_field": "your_ticket_identifier_field",
-      "supplier_name": "Supplier Name",
       "template": "{{ ticket_data | tojson }}",
       "batch_size": 10,
       "ticket_export_criteria": [
@@ -64,7 +64,7 @@ Specifies the type of data source for importing tickets. Examples include "libra
 
 The field used to uniquely identify tickets in the source system. Example: "TicketID".
 
-#### `latest_tickets_queries` 
+#### `latest_tickets_queries`
 
 - Type: `array`
 - Required: `true`
@@ -75,10 +75,12 @@ An array of objects containing SQL queries to fetch the latest tickets:
 - `sql` (string): The SQL query to fetch the latest tickets.
 
 When running FreeTicketing with XBE:
+
 - The SQL queries are automatically managed and updated through the XBE API.
 - You don't need to manually set up or modify any SQL queries.
 
 When using FreeTicketing without XBE:
+
 - This field is not required.
 - You need to manually set up and manage the SQL queries.
 - Follow the [guide](./fetch-latest-tickets.md) for detailed instructions.
@@ -232,10 +234,4 @@ Configuration for the material site:
 - `longitude` (string): Longitude coordinate.
 - `is_portable` (boolean): Indicates if the site is portable.
 - `dayphone` (string): Day phone number in format "XXX-XXX-XXXX".
-
-#### `supplier_name`
-
-- Type: `string`
-- Required: `false`
-
-Name of the supplier.
+- `supplier_name` (string): Name of the supplier.

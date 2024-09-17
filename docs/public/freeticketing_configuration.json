@@ -97,9 +97,6 @@
         },
         "headers": {
           "type": "object"
-        },
-        "supplier_name": {
-          "type": "string"
         }
       },
       "required": ["name", "api_url", "ticket_identifier_field", "ticket_export_criteria"]
@@ -184,6 +181,9 @@
         "dayphone": {
           "type": "string",
           "pattern": "^\\d{3}-\\d{3}-\\d{4}$"
+        },
+        "supplier_name": {
+          "type": "string"
         }
       },
       "required": ["external_id", "name"]
