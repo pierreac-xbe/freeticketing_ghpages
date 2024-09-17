@@ -1,6 +1,10 @@
 # Fetch Latest Tickets
 
-The SQL query files are used to fetch the latest tickets from the ticket database.
+This guide provides instructions on how to fetch the latest tickets from your ticket database using SQL query files.
+
+:::info
+This guide is only applicable when using FreeTicketing without XBE. If you're using FreeTicketing with XBE, the SQL queries are automatically managed and updated through the XBE API, and you don't need to manually set up or modify any SQL queries.
+:::
 
 ## File Structure
 
