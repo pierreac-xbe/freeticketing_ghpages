@@ -3,7 +3,7 @@
 The `config.json` file is stored in the same directory as the application executable and contains all configuration related to sending tickets to the desired destination.
 
 ## Schema
-Full JSON schema available [here](/freetickeing_configuration.json).
+Full JSON schema available [here](/freeticketing_configuration.json).
 
 ## Example configuration
 
