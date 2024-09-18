@@ -92,8 +92,15 @@
             "$ref": "#/definitions/ticket_export_criteria"
           }
         },
-        "material_site": {
-          "$ref": "#/definitions/material_site"
+        "material_site_identifier_field": {
+          "type": "string",
+          "description": "The field that will be used to identify the material site"
+        },
+        "material_sites": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/material_site"
+          }
         },
         "headers": {
           "type": "object"
@@ -143,6 +150,10 @@
     "material_site": {
       "type": "object",
       "properties": {
+        "identifier_value": {
+          "type": "string",
+          "description": "The value of the field that will be used to identify the material site"
+        },
         "external_id": {
           "type": "string"
         },
@@ -186,7 +197,7 @@
           "type": "string"
         }
       },
-      "required": ["external_id", "name"]
+      "required": ["identifier_value", "external_id", "name"]
     }
   }
 }
