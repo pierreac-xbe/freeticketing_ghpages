@@ -36,11 +36,15 @@ Full JSON schema available [here](/freeticketing_configuration.json).
           "match_values": ["123456", "789012"]
         }
       ],
-      "material_site": {
-        "external_id": "123456",
-        "name": "Material Site Name",
-        "street_address_1": "123 Main St"
-      }
+      "material_site_identifier_field": "your_material_site_identifier_field",
+      "material_sites": [
+        {
+          "identifier_value": "123456",
+          "external_id": "123456",
+          "name": "Material Site Name",
+          "street_address_1": "123 Main St"
+        }
+      ]
     }
   ]
 }
@@ -216,13 +220,21 @@ An array of criteria for filtering tickets to be exported:
 - `contract_number` (string, optional): Contract number/Project number.
 - `dot_code` (string, optional): DOT code for the supplier.
 
-#### `material_site`
+#### `material_site_identifier_field`
 
-- Type: `object`
+- Type: `string`
+- Required: `true`
+
+The field used to identify material sites for this specific exporter.
+
+#### `material_sites`
+
+- Type: `array`
 - Required: `false`
 
 Configuration for the material site:
 
+- `identifier_value` (string, required): The value of the field that will be used to identify the material site.
 - `external_id` (string, required): External ID of the material site.
 - `name` (string, required): Name of the material site.
 - `street_address_1` (string): First line of the street address.
