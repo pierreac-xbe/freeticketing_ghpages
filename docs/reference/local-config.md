@@ -6,23 +6,32 @@ The `config.local.json` file contains settings specific to the local environment
 
 ```json
 {
-  "local_only": false,
+  "is_remote_logging_enabled": true,
+  "is_remote_config_enabled": true,
   "database_connection_string": "DSN=FreeTicketing;",
-  "api_config_url": "https://example.com/config",
-  "api_logging_url": "https://example.com/logs",
-  "api_key": "1234567890"
+  "api_config_url": "",
+  "api_logging_url": "",
+  "api_key": ""
 }
 ```
 
 ## Configuration Fields
 
-### `local_only`
+### `is_remote_logging_enabled`
 
 - Type: `boolean`
-- Required: `false`
-- Default: `false`
+- Required: `true`
+- Default: `true`
 
-Determines whether the application runs in local-only mode. When set to `true`, XBE API-related configurations `api_config_url`, `api_logging_url`, and `api_key` are not required.
+Determines whether remote logging is enabled. When set to `true`, logs will be sent to the remote logging endpoint specified by `api_logging_url`.
+
+### `is_remote_config_enabled`
+
+- Type: `boolean`
+- Required: `true`
+- Default: `true`
+
+Determines whether remote configuration is enabled. When set to `true`, the application will fetch configuration, templates, and SQL queries from the remote endpoint specified by `api_config_url`.
 
 ### `database_connection_string`
 
@@ -34,26 +43,26 @@ The connection string / DSN used to connect to the database. For example: "DSN=F
 ### `api_config_url`
 
 - Type: `string`
-- Required: `false` (only when `local_only` is `true`)
+- Required: `true` (when `is_remote_config_enabled` is `true`)
 
-The URL endpoint for fetching the configuration, templates, and sql queries from the XBE API.
+The URL endpoint for fetching the configuration, templates, and SQL queries from the remote API.
 
 ### `api_logging_url`
 
 - Type: `string`
-- Required: `false` (only when `local_only` is `true`)
+- Required: `true` (when `is_remote_logging_enabled` is `true`)
 
-The URL endpoint for sending logs to the XBE API.
+The URL endpoint for sending logs to the remote API.
 
 ### `api_key`
 
 - Type: `string`
-- Required: `false` (only when `local_only` is `true`)
+- Required: `true` (when either `is_remote_config_enabled` or `is_remote_logging_enabled` is `true`)
 
-The API key used for authentication when making requests to the XBE API endpoints.
+The API key used for authentication when making requests to the remote API endpoints.
 
 :::info
 
-The 3 fields are specifically used when running the application with XBE.
+The `api_config_url`, `api_logging_url`, and `api_key` fields are specifically used when running the application with remote configuration or logging enabled.
 
 :::
