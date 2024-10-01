@@ -76,7 +76,7 @@ You can access configuration variables in your templates as well:
     "meta": {
         "timestamp": "{{ timestamp }}",
         "exporter": "{{ exporter_config.name }}",
-        "remote_logging_enabled": {{ remote_config.is_remote_logging_enabled | lower }},
+        "database_pagination_type": "{{ remote_config.database_pagination_type }}",
         "database": "{{ local_config.database_connection_string }}"
     }
 }
