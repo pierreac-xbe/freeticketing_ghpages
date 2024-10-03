@@ -57,11 +57,12 @@ Usage without XBE: Example `config.local.json`:
 ```json
 {
   "database_connection_string": "DSN=FreeTicketing;",
-  "local_only": true
+  "is_remote_config_enabled": false,
+  "is_remote_logging_enabled": false
 }
 ```
 
-Update the `local_only` field to `true`.
+Update the `is_remote_config_enabled` and `is_remote_logging_enabled` fields to `true`.
 
 For more information, see the [full local config reference](../reference/local-config.md).
 
