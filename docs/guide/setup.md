@@ -38,8 +38,8 @@ Usage with XBE: Contact the XBE team at [help@x-b-e.com](mailto:help@x-b-e.com) 
 
 1. Add the ODBC connection obtained from the previous step to the `database_connection_string` field. It will look something like `DSN=<Your DSN Name>;`.
 2. Update the `database_pagination_type` to the appropriate value.
-
-Usage with XBE: Example `config.local.json`:
+### Usage with XBE: 
+Example `config.local.json`:
 
 Fill in the `api_config_url`, `api_logging_url`, and `api_key` fields with the values provided by the XBE team.
 
@@ -51,8 +51,8 @@ Fill in the `api_config_url`, `api_logging_url`, and `api_key` fields with the v
   "api_key": "value-goes-here"
 }
 ```
-
-Usage without XBE: Example `config.local.json`:
+### Usage without XBE: 
+Example `config.local.json`:
 
 ```json
 {
@@ -62,7 +62,7 @@ Usage without XBE: Example `config.local.json`:
 }
 ```
 
-Update the `is_remote_config_enabled` and `is_remote_logging_enabled` fields to `true`.
+Update the `is_remote_config_enabled` and `is_remote_logging_enabled` fields to `false`.
 
 For more information, see the [full local config reference](../reference/local-config.md).
 
