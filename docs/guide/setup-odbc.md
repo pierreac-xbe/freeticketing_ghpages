@@ -42,6 +42,8 @@ For all platforms, ensure you have the necessary permissions and network access 
        - Database: Select or enter the database name.
        - Authentication: Choose the appropriate authentication method.
        - Click "Test Connection" to verify the setup, then click "OK" to save.
+   - For Access
+       - Click on 'Select' to select the Access database file ending with .accdb or .mdb.
    - For ADS
        - Check the 'Data Dictionary' box
            - Browse to and select the 'WM2000DATA.ADD' file.
