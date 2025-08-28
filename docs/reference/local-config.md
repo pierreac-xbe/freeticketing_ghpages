@@ -11,7 +11,9 @@ The `config.local.json` file contains settings specific to the local environment
   "database_connection_string": "DSN=FreeTicketing;",
   "api_config_url": "",
   "api_logging_url": "",
-  "api_key": ""
+  "api_key": "",
+  "cleanup_interval_minutes": 30,
+  "data_retention_days": 5
 }
 ```
 
@@ -60,6 +62,22 @@ The URL endpoint for sending logs to the remote API.
 - Required: `true` (when either `is_remote_config_enabled` or `is_remote_logging_enabled` is `true`)
 
 The API key used for authentication when making requests to the remote API endpoints.
+
+### `cleanup_interval_minutes`
+
+- Type: `integer`
+- Required: `false`
+- Default: `30`
+
+How often (in minutes) the application performs cleanup operations like removing expired data and temporary files.
+
+### `data_retention_days`
+
+- Type: `integer`
+- Required: `false`
+- Default: `30`
+
+How long (in days) to keep logs, temporary files, and cached data before automatic cleanup.
 
 :::info
 
