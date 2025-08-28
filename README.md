@@ -1,23 +1,34 @@
-## Dependencies
+# Setup
 
-Install Node
+## Install Volta 
+Visit [Volta](https://volta.sh/) and follow the steps. 
 
-NODE_VERSION: '20.17.0' # lts/iron
-
-Prefer [Volta](https://volta.sh/)
-
-```sh
-volta install
-```
-
-Install [VitePress](https://vitepress.dev/guide/getting-started)
+## Install node
 
 ```sh
-npm add -D vitepress
+node --version
 ```
 
-Install packages
+## Install packages
 
 ```sh
 npm install
+```
+
+## Run dev sever
+
+```sh
+npm run dev
+```
+
+## Build the Docs
+
+```sh
+npm run build
+```
+
+## Local preview the docs
+
+```sh
+npm run preview
 ```
